@@ -1,6 +1,6 @@
 # POPVERSE
 
-**Dupla:** Nome 1 e Nome 2
+**Estudante:** Sophya Barbosa Rodrigues
 **Site publicado:** (cole aqui o link da Vercel)
 
 ## Briefing
@@ -11,11 +11,10 @@
 - **Inspirações:** (cole 3 links reais e diga o que gostaram em cada um)
 
 ## Antes e depois
-![Antes](img/antes.png)
-![Depois](img/depois.png)
+![Antes](Não consegui colocar as imagens)
+![Depois](Não consegui colocar as imagens)
 
-## Os 4 prompts que mais fizeram diferença
-1. (cole aqui o prompt real que vocês usaram)
-2. ...
-3. ...
-4. ...
+## Os prompts que mais fizeram diferença
+1. Faça com um design com mais cara de festival de música pop, adicione imagens que remetam ao festival e use um contraste de cores que foque na cor azul
+2. faz uma vibe mais coachella só que usando um contraste de azul
+3. as animações das páginas não precisam ser iguais, podem ser diferentes. 
