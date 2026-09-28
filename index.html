@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Início | POPVERSE 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;900&family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="p-index">
+<header><div class="topo"><a class="logo" href="index.html">POPVERSE</a><nav><a href="index.html" class="ativo" aria-current="page">Início</a><a href="lineup.html">Line-up</a><a href="ingressos.html">Ingressos</a><a href="informacoes.html">Informações</a><a href="faq.html">Dúvidas</a></nav><a class="btn" href="ingressos.html">Garantir ticket</a></div></header>
+<div class="faixa-nomes" aria-hidden="true"><div class="trilho"><span>Dua Lipa</span><span>Tate McRae</span><span>Anitta</span><span>Sabrina Carpenter</span><span>Chappell Roan</span><span>Charli xcx</span><span>Olivia Rodrigo</span><span>Billie Eilish</span><span>Troye Sivan</span><span>Dua Lipa</span><span>Tate McRae</span><span>Anitta</span><span>Sabrina Carpenter</span><span>Chappell Roan</span><span>Charli xcx</span><span>Olivia Rodrigo</span><span>Billie Eilish</span><span>Troye Sivan</span></div></div><section class="hero"><p class="pilula">20, 21 e 22 de novembro de 2026</p><h1>Popverse <span>Festival</span></h1><p class="chamada">O futuro do pop no mesmo palco</p><p class="local">Autódromo de Interlagos, São Paulo, SP</p>
+<div class="contagem"><p>Contagem regressiva para o festival</p><div class="tempo"><div><strong id="dias">00</strong><small>Dias</small></div><div><strong id="horas">00</strong><small>Horas</small></div><div><strong id="min">00</strong><small>Min</small></div><div><strong id="seg">00</strong><small>Seg</small></div></div></div>
+<div class="botoes"><a class="btn" href="ingressos.html">Comprar ingressos</a><a class="btn sec" href="lineup.html">Ver line-up completo</a></div><div class="eq" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></section>
+<main><h2>Destaques headliners</h2><div class="destaques">
+<a class="d1" href="lineup.html"><span>Dua Lipa, sexta 20/11</span></a>
+<a class="d2" href="lineup.html"><span>Sabrina Carpenter, sábado 21/11</span></a>
+<a class="d3" href="lineup.html"><span>Olivia Rodrigo, domingo 22/11</span></a></div>
+<section class="faixa"><h2>Nove shows. Dois palcos. Um autódromo.</h2><a class="btn" href="lineup.html">Ver o line-up completo</a></section></main>
+<script>
+var alvo=new Date('2026-11-20T18:00:00-03:00');
+function tick(){var s=Math.floor(Math.max(0,alvo-new Date())/1000),v=[Math.floor(s/86400),Math.floor(s%86400/3600),Math.floor(s%3600/60),s%60];
+['dias','horas','min','seg'].forEach(function(id,i){document.getElementById(id).textContent=String(v[i]).padStart(2,'0')})}
+tick();setInterval(tick,1000);
+</script>
+<footer>POPVERSE 2026, Autódromo de Interlagos. Feito por Nome 1 e Nome 2.</footer>
+</body>
+</html>
