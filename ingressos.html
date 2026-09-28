@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ingressos | POPVERSE 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;900&family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="p-ingressos">
+<header><div class="topo"><a class="logo" href="index.html">POPVERSE</a><nav><a href="index.html">Início</a><a href="lineup.html">Line-up</a><a href="ingressos.html" class="ativo" aria-current="page">Ingressos</a><a href="informacoes.html">Informações</a><a href="faq.html">Dúvidas</a></nav><a class="btn" href="ingressos.html">Garantir ticket</a></div></header>
+<div class="faixa-nomes" aria-hidden="true"><div class="trilho"><span>Dua Lipa</span><span>Tate McRae</span><span>Anitta</span><span>Sabrina Carpenter</span><span>Chappell Roan</span><span>Charli xcx</span><span>Olivia Rodrigo</span><span>Billie Eilish</span><span>Troye Sivan</span><span>Dua Lipa</span><span>Tate McRae</span><span>Anitta</span><span>Sabrina Carpenter</span><span>Chappell Roan</span><span>Charli xcx</span><span>Olivia Rodrigo</span><span>Billie Eilish</span><span>Troye Sivan</span></div></div><section class="hero mini bn-ingressos"><div class="confete" aria-hidden="true"><span style="left:6%;animation-delay:-0s"></span><span style="left:14%;animation-delay:-5s"></span><span style="left:22%;animation-delay:-3s"></span><span style="left:30%;animation-delay:-1s"></span><span style="left:38%;animation-delay:-6s"></span><span style="left:46%;animation-delay:-4s"></span><span style="left:54%;animation-delay:-2s"></span><span style="left:62%;animation-delay:-0s"></span><span style="left:70%;animation-delay:-5s"></span><span style="left:78%;animation-delay:-3s"></span><span style="left:86%;animation-delay:-1s"></span><span style="left:94%;animation-delay:-6s"></span></div><p class="pilula">20, 21 e 22 de novembro de 2026</p><h1>Ingressos</h1><p class="chamada">Escolha seu passe para três dias no Autódromo de Interlagos.</p></section><main><div class="planos">
+<article class="plano"><h2>Pista</h2><p class="preco">R$ 390</p><ul><li>Entrada em 1 dia à escolha</li><li>Acesso aos dois palcos</li><li>Praça de alimentação</li><li>Bebedouros gratuitos</li></ul><button class="btn" type="button">Escolher Pista</button></article>
+<article class="plano mid"><h2>Pista Premium</h2><p class="preco">R$ 690</p><ul><li>Passaporte dos 3 dias</li><li>Área perto do palco</li><li>Fila rápida na entrada</li><li>Bar e banheiros exclusivos</li></ul><button class="btn" type="button">Escolher Premium</button></article>
+<article class="plano vip"><h2>Camarote VIP</h2><p class="preco">R$ 1.290</p><ul><li>Passaporte dos 3 dias</li><li>Camarote com vista para os palcos</li><li>Buffet e bebidas inclusos</li><li>Lounge com ar-condicionado e pulseira colecionável</li></ul><button class="btn" type="button">Escolher VIP</button></article></div>
+<section class="calc"><h2>Calcule seu ingresso</h2><div class="calc-campos"><label>Tipo<select id="tipo"><option value="390">Pista, R$ 390</option><option value="690">Pista Premium, R$ 690</option><option value="1290">Camarote VIP, R$ 1.290</option></select></label><label>Quantidade<input id="qtd" type="number" min="1" max="6" value="1"></label><p class="total">Total<strong id="total">R$ 390</strong></p></div></section><p class="nota">Meia-entrada disponível nos termos da lei. Valores fictícios para fins didáticos.</p></main>
+<script>
+var tipo=document.getElementById('tipo'),qtd=document.getElementById('qtd'),total=document.getElementById('total');
+function calc(){var q=Math.max(1,Math.min(6,Number(qtd.value)||1));total.textContent=(Number(tipo.value)*q).toLocaleString('pt-BR',{style:'currency',currency:'BRL',maximumFractionDigits:0})}
+tipo.onchange=calc;qtd.oninput=calc;
+</script>
+<footer>POPVERSE 2026, Autódromo de Interlagos. Feito por Nome 1 e Nome 2.</footer>
+</body>
+</html>

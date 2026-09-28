@@ -1,0 +1,146 @@
+/* style.css único do POPVERSE: estrutura comum primeiro, depois um bloco por página */
+:root{--az:#1B3BFF;--nv:#0A1A5C;--cl:#8FD0FF;--gl:#EAF4FF;--sol:#FF6A4D}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font:400 1rem/1.6 'Manrope',sans-serif;background:var(--gl) url(img/fundo.svg);color:var(--nv)}
+h1,h2,h3{font-family:'Unbounded',sans-serif;font-weight:900;text-transform:uppercase;line-height:1.15}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sol);outline-offset:3px}
+[hidden]{display:none!important}
+header{position:sticky;top:0;z-index:5;background:var(--nv);color:#fff;border-bottom:4px solid var(--sol)}
+.topo{max-width:1100px;margin:auto;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.logo{font:900 1.3rem 'Unbounded',sans-serif;letter-spacing:.04em;color:#fff;text-decoration:none}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav a{padding:8px 12px;font-weight:700;text-decoration:none;border-bottom:3px solid transparent}
+nav a:hover,nav a.ativo{border-color:var(--cl);color:var(--cl)}
+main{max-width:1100px;margin:auto;padding:56px 20px}
+main h2{font-size:1.7rem;margin-bottom:24px}
+footer{background:var(--nv);color:var(--cl);padding:28px 20px;text-align:center;font-weight:700}
+.btn{display:inline-block;background:var(--sol);color:var(--nv);padding:13px 26px;border:3px solid var(--nv);border-radius:99px;font:800 .78rem 'Unbounded',sans-serif;text-transform:uppercase;text-decoration:none;cursor:pointer;box-shadow:4px 4px 0 var(--nv)}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--nv)}
+.btn.sec{background:#fff}
+.topo .btn{padding:8px 16px;font-size:.68rem;border-color:#fff;box-shadow:3px 3px 0 var(--az)}
+/* ---- Página: Início ---- */
+.faixa-nomes{background:var(--cl);color:var(--nv);overflow:hidden;white-space:nowrap;border-bottom:4px solid var(--nv)}
+.trilho{display:inline-flex;animation:rola 32s linear infinite}
+.trilho span{font:900 .85rem 'Unbounded',sans-serif;text-transform:uppercase;padding:12px 28px}
+.trilho span::after{content:"";display:inline-block;width:10px;height:10px;background:var(--sol);margin-left:56px;transform:rotate(45deg)}
+@keyframes rola{to{transform:translateX(-50%)}}
+.hero{position:relative;overflow:hidden;text-align:center;padding:72px 20px 140px;color:#fff;background:var(--az) url(img/hero.svg) center bottom/cover;border-bottom:4px solid var(--nv)}
+.hero>*{position:relative}
+.pilula{display:inline-block;padding:8px 18px;background:var(--sol);color:var(--nv);border:3px solid var(--nv);border-radius:99px;font:800 .78rem 'Unbounded',sans-serif}
+.hero h1{font-size:clamp(2.2rem,8vw,5rem);margin:22px 0 10px;text-shadow:5px 5px 0 var(--nv)}
+.hero h1 span{color:var(--cl)}
+.chamada{font:700 1rem 'Unbounded',sans-serif}
+.local{margin:8px 0 28px;font-weight:700}
+.contagem{display:inline-block;padding:20px;background:rgba(10,26,92,.88);border:3px solid #fff;border-radius:20px;margin-bottom:28px}
+.contagem p{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+.tempo{display:flex;gap:12px}
+.tempo div{min-width:84px;padding:12px;background:#fff;color:var(--nv);border-radius:12px}
+.tempo strong{display:block;font:900 1.8rem 'Unbounded',sans-serif;color:var(--az)}
+.tempo div:last-child strong{color:var(--sol)}
+.botoes{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.eq{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:flex-end;gap:4px;height:70px;padding:0 6px}
+.eq span{flex:1;height:100%;background:var(--nv);transform-origin:bottom;animation:pulo 1.1s ease-in-out infinite alternate}
+.eq span:nth-child(3n){animation-duration:.75s;animation-delay:-.3s}
+.eq span:nth-child(3n+1){animation-duration:1.4s;animation-delay:-.7s}
+.eq span:nth-child(5n){background:var(--az)}
+@keyframes pulo{from{transform:scaleY(.12)}to{transform:scaleY(1)}}
+.hero.mini{padding:56px 20px 110px}
+.hero.mini h1{font-size:clamp(2rem,6.5vw,3.8rem)}
+.destaques{display:grid;grid-template-columns:2fr 1fr 1fr;gap:24px}
+.destaques a{display:flex;align-items:flex-end;min-height:420px;padding:14px;background-size:cover;background-position:center;border:4px solid var(--nv);box-shadow:8px 8px 0 var(--nv);text-decoration:none;font-weight:800}
+.destaques span{background:#fff;border:3px solid var(--nv);padding:8px 12px}
+.destaques a:hover{transform:translate(3px,3px);box-shadow:5px 5px 0 var(--nv)}
+.d1{background-image:url(img/dua.svg)}.d2{background-image:url(img/sabrina.svg);margin-top:28px}.d3{background-image:url(img/olivia.svg)}
+.faixa{margin-top:64px;padding:40px 20px;text-align:center;background:var(--az);color:#fff;border:4px solid var(--nv);box-shadow:8px 8px 0 var(--nv)}
+.faixa h2{margin-bottom:18px}
+/* ---- Página: Line-up ---- */
+.legenda{display:flex;gap:24px;margin-bottom:28px;font-weight:800}
+.legenda span{padding-left:14px;border-left:10px solid}
+.legenda .az{border-color:var(--az)}.legenda .vm{border-color:var(--cl)}
+.filtros{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px}
+.filtros .btn{padding:10px 20px}
+.filtros .on{background:var(--az);color:#fff}
+.grade{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-bottom:56px}
+.artista{background:#fff;border:3px solid var(--nv);border-top-width:14px;box-shadow:6px 6px 0 var(--nv)}
+.artista.az{border-top-color:var(--az)}.artista.vm{border-top-color:var(--cl)}
+.artista img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-bottom:3px solid var(--nv)}
+.artista h3{font-size:1.05rem;margin:14px 16px 4px}
+.artista p{margin:0 16px}
+.artista p:last-child{margin-bottom:16px}
+/* ---- Página: Ingressos ---- */
+.planos{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch}
+.plano{padding:32px 26px;background:#fff;border:3px solid var(--nv);box-shadow:8px 8px 0 var(--nv);display:flex;flex-direction:column}
+.plano.mid{background:var(--az);color:#fff}
+.plano.vip{background:var(--nv);color:#fff}
+.plano h2{font-size:1.15rem;margin:0}
+.preco{font:900 2rem 'Unbounded',sans-serif;margin:10px 0 18px}
+.plano ul{list-style:none;flex:1;margin-bottom:26px}
+.plano li{padding:10px 0;border-top:2px solid currentColor}
+.plano .btn{text-align:center}
+.nota{margin-top:28px;font-weight:700}
+.calc{margin-top:56px;padding:28px;background:var(--cl);border:3px solid var(--nv);box-shadow:8px 8px 0 var(--nv)}
+.calc h2{font-size:1.15rem;margin-bottom:18px}
+.calc-campos{display:flex;gap:20px;flex-wrap:wrap;align-items:end}
+.total{font-weight:800}
+.total strong{display:block;font:900 2rem 'Unbounded',sans-serif;color:var(--az)}
+/* ---- Página: Informações ---- */
+.dois,.regras{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.dois{margin-bottom:40px}
+.dois div,.regras div{padding:26px;background:#fff;border:3px solid var(--nv);box-shadow:6px 6px 0 var(--nv)}
+.dois h3,.regras h3{font-size:1rem;margin-bottom:10px}
+.dois ul,.regras ul{margin-left:20px}
+.regras .pode{background:var(--cl)}
+.regras .nao{background:var(--sol)}
+iframe{width:100%;height:380px;border:4px solid var(--nv);box-shadow:8px 8px 0 var(--nv);margin-bottom:56px;display:block}
+/* ---- Página: Dúvidas e contato ---- */
+.faq{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:start}
+details{background:#fff;border:3px solid var(--nv);padding:16px 20px;margin-bottom:14px}
+summary{cursor:pointer;font-weight:800}
+details[open]{background:var(--cl)}
+details p{margin-top:10px}
+form{background:var(--az);color:#fff;border:3px solid var(--nv);box-shadow:8px 8px 0 var(--nv);padding:28px;display:grid;gap:14px}
+form h3{font-size:1.05rem}
+label{font-weight:700;display:grid;gap:6px}
+input,select,textarea{padding:12px;border:3px solid var(--nv);font:inherit;background:#fff;color:var(--nv)}
+textarea{min-height:120px}
+/* ---- Fundo: textura e sóis girando ---- */
+body::before,body::after{content:"";position:fixed;z-index:-1;pointer-events:none;background:url(img/sol.svg) center/contain no-repeat;animation:gira 80s linear infinite}
+body::before{right:-220px;bottom:-220px;width:560px;height:560px;opacity:.6}
+body::after{left:-240px;top:38%;width:460px;height:460px;opacity:.4;animation-direction:reverse}
+@keyframes gira{to{transform:rotate(360deg)}}
+/* ---- Animação própria de cada banner ---- */
+.holofotes,.confete,.nuvens,.ondas{position:absolute;inset:0;pointer-events:none}
+.holofotes span{position:absolute;bottom:-20px;width:190px;height:140%;background:linear-gradient(to top,rgba(255,255,255,.6),transparent 75%);clip-path:polygon(45% 100%,55% 100%,100% 0,0 0);transform-origin:50% 100%;animation:varre 5s ease-in-out infinite alternate}
+.holofotes span:nth-child(1){left:8%;animation-delay:-1s}
+.holofotes span:nth-child(2){left:34%;animation-duration:6.5s;animation-delay:-3s}
+.holofotes span:nth-child(3){left:60%;animation-duration:4.5s}
+.holofotes span:nth-child(4){left:84%;animation-delay:-2s}
+@keyframes varre{from{transform:rotate(-28deg)}to{transform:rotate(28deg)}}
+.confete span{position:absolute;top:-24px;width:12px;height:18px;background:var(--sol);animation:cai 6s linear infinite}
+.confete span:nth-child(3n){background:var(--cl)}
+.confete span:nth-child(3n+1){background:#fff;animation-duration:8s}
+.confete span:nth-child(4n){background:var(--az)}
+@keyframes cai{to{transform:translateY(440px) rotate(360deg)}}
+.nuvens span{position:absolute;height:34px;background:rgba(255,255,255,.9);border-radius:99px;animation:passa 26s linear infinite}
+.nuvens span::before{content:"";position:absolute;left:22%;top:-16px;width:45%;height:34px;background:inherit;border-radius:99px}
+.nuvens span:nth-child(1){top:14%;width:150px}
+.nuvens span:nth-child(2){top:38%;width:220px;animation-duration:38s;animation-delay:-12s}
+.nuvens span:nth-child(3){top:60%;width:110px;animation-duration:20s;animation-delay:-6s}
+@keyframes passa{from{left:-260px}to{left:100%}}
+.ondas span{position:absolute;left:50%;bottom:-40px;width:80px;height:80px;margin-left:-40px;border:4px solid rgba(255,255,255,.75);border-radius:50%;animation:ecoa 4s ease-out infinite}
+.ondas span:nth-child(2){animation-delay:1.3s}
+.ondas span:nth-child(3){animation-delay:2.6s}
+@keyframes ecoa{from{transform:scale(1);opacity:1}to{transform:scale(9);opacity:0}}
+.bn-lineup{background-image:url(img/banner-lineup.svg)}
+.bn-ingressos{background-image:url(img/banner-ingressos.svg)}
+.bn-informacoes{background-image:url(img/banner-informacoes.svg)}
+.bn-faq{background-image:url(img/banner-faq.svg)}
+/* ---- Cada página tem o seu sol de fundo (o do início é img/sol.svg) ---- */
+.p-lineup::before,.p-lineup::after{background-image:url(img/sol-lineup.svg)}
+.p-ingressos::before,.p-ingressos::after{background-image:url(img/sol-ingressos.svg)}
+.p-informacoes::before,.p-informacoes::after{background-image:url(img/sol-informacoes.svg)}
+.p-faq::before,.p-faq::after{background-image:url(img/sol-faq.svg)}
+@media(max-width:800px){.destaques,.planos,.dois,.regras,.faq{grid-template-columns:1fr}.destaques a{min-height:280px}.d2{margin-top:0}.grade{grid-template-columns:1fr 1fr}.tempo{gap:8px}.tempo div{min-width:64px}}
+@media(max-width:520px){.grade{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.trilho,.eq span{animation:none}}
