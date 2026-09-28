@@ -1,7 +1,7 @@
 # POPVERSE
 
 **Estudante:** Sophya Barbosa Rodrigues
-**Site publicado:** (cole aqui o link da Vercel)
+**Site publicado:** (https://popverse-h6aj1uq4c-sophyabluebarbosa-5262s-projects.vercel.app/)
 
 ## Briefing
 - **Público:** jovens de 15 a 30 anos, fãs de pop atual, que vivem no TikTok e no Spotify e esperam um festival visual, barulhento e fácil de usar no celular.
