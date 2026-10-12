@@ -2,7 +2,7 @@
 :root{--az:#1B3BFF;--nv:#0A1A5C;--cl:#8FD0FF;--gl:#EAF4FF;--sol:#FF6A4D}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font:400 1rem/1.6 'Manrope',sans-serif;background:var(--gl) url(img/fundo.svg);color:var(--nv)}
-h1,h2,h3{font-family:'Unbounded',sans-serif;font-weight:900;text-transform:uppercase;line-height:1.15}
+h1,h2,h3{font-family:'Unbounded',sans-serif;font-weight 100;text-transform:uppercase;line-height:1.15}
 a{color:inherit}
 :focus-visible{outline:3px solid var(--sol);outline-offset:3px}
 [hidden]{display:none!important}
